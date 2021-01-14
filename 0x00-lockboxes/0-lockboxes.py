@@ -4,7 +4,7 @@
 def canUnlockAll(boxes):
     unlocked = [False] * len(boxes)
     unlocked[0] = True
-    
+
     changed = True
 
     while (changed):
