@@ -15,7 +15,7 @@ int slide_line(int *line, size_t size, int direction)
         int slide;
 
         if (!line)
-                return;
+                return (0);
     
         if (direction != SLIDE_LEFT && direction !- SLIDE_RIGHT)
                 return (0);
@@ -49,5 +49,5 @@ int slide_line(int *line, size_t size, int direction)
         }
 
         return (1);
-        
+
 }
