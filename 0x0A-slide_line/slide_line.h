@@ -1,4 +1,4 @@
-#ifndef  __SLIDE_LINE__
+#ifndef __SLIDE_LINE__
 #define __SLIDE_LINE__
 
 #include <stdlib.h>
