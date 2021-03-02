@@ -1,4 +1,4 @@
-#ifndef  __SLIDE_LINE__
+#ifndef __SLIDE_LINE__
 #define __SLIDE_LINE__
 
 #include <stdlib.h>
@@ -8,4 +8,4 @@
 
 int slide_line(int *line, size_t size, int direction);
 
-#endif __SLIDE_LINE__
+#endif
