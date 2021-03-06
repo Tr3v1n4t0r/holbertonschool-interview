@@ -13,7 +13,7 @@ def print_info():
     sc = sorted(info.keys())
     for n in sc:
         if info[n] > 0:
-            prinf("{}: {}".format(n, info[n]))
+            print("{}: {}".format(n, info[n]))
 
 if __name__ == "__main__":
     count = 0
