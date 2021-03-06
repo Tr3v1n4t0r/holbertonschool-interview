@@ -1,26 +1,17 @@
 #!/usr/bin/python3
+"""
+Determines if all the locked boxes can be opened
+from gathering keys from other boxes
+"""
 
 
 def canUnlockAll(boxes):
-    unlocked = [False] * len(boxes)
-    unlocked[0] = True
-
-    changed = True
-
-    while (changed):
-        changed = False
-
-        for i in range(len(boxes)):
-            if (not unlocked[i]):
-                continue
-
-            for j in range(len(boxes[i])):
-                if (boxes[i][j] >= len(boxes)):
-                    continue
-
-                key = boxes[i][j]
-                if (not unlocked[key]):
-                    unlocked[key] = True
-                    changed = True
-
-    return all(unlocked)
+    open = {0}
+    for i, box in enumerate(boxes):
+        for key in box:
+            if key != i:
+                open.add(key)
+    for i in range(len(boxes)):
+        if i not in open:
+            return False
+    return True
