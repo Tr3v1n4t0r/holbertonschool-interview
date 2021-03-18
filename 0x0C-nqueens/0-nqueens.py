@@ -37,7 +37,7 @@ def conv(sol):
     fin = []
     for x in range(len(sol)):
         fin.append([])
-        fin.append(x)
+        fin[x].append(x)
         for y in range(len(sol)):
             if sol[x][y] == 1:
                 fin[x].append(y)
