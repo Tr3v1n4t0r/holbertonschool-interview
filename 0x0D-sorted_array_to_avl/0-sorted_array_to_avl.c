@@ -27,7 +27,7 @@ avl_t *sorted_array_to_avl(int *array, size_t size)
 	head->left = recurse(array, head, 0, (size - 1) / 2 - 1, &err);
 	head->right = recurse(array, head, (size - 1) / 2 + 1, size - 1, &err);
 
-	if(err)
+	if (err)
 		return (NULL);
 
 	return (head);
