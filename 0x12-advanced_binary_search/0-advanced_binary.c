@@ -1,4 +1,4 @@
-﻿#include "search_algos.h"
+#include "search_algos.h"
 
 /**
  * advanced_binary - searches for first occurence of given value
