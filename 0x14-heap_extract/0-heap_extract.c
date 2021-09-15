@@ -2,14 +2,14 @@
 
 /**
  * heap_extract - extracts the root node of a Max Binary Heap
- * root: the root node of the heap
+ * @root: the root node of the heap
  *
  * Return: value of the root node, 0 upon failure
  **/
-int heap_extract(heap_t** root)
+int heap_extract(heap_t **root)
 {
 	int res, height;
-	heap_t* last;
+	heap_t *last;
 
 	if (root == NULL)
 		return (0);
@@ -51,7 +51,7 @@ int heap_extract(heap_t** root)
  *
  * Return: calculated height
  **/
-int check_height(heap_t* node, int height)
+int check_height(heap_t *node, int height)
 {
 	int l, r;
 
@@ -77,9 +77,9 @@ int check_height(heap_t* node, int height)
  *
  * Return: last node in the heap
  **/
-heap_t* get_last(heap_t* node, int height, int node_height)
+heap_t *get_last(heap_t *node, int height, int node_height)
 {
-	heap_t* tmp;
+	heap_t *tmp;
 
 	if (node_height >= height - 1)
 	{
@@ -101,10 +101,10 @@ heap_t* get_last(heap_t* node, int height, int node_height)
  * heapify - heapifies a heap
  * @node: node to start from
  **/
-void heapify(heap_t* node)
+void heapify(heap_t *node)
 {
 	int tmp;
-	heap_t* max = node;
+	heap_t *max = node;
 
 	if (node->left != NULL && node->left->n >= max->n)
 		max = node->left;
